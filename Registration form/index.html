@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="form" action="/myaction.php" name="myForm" onsubmit="return formvalidation()" method="post">
+        <div class="heading">
+            <h2>Register</h2>
+        </div>
+
+        <div class="heading2">  
+            Kindly fill in this form to register.</h5>
+        </div>
+
+        <div class="design" id="name">
+            <input type="text" autocomplete="off" name="fname" required placeholder="Enter your Name"><span class="error"></span>
+        </div>
+
+        <div class="design" id="email">
+            <input type="email" autocomplete="off" name="femail" required placeholder="Enter your E-mail"><span class="error"></span>
+        </div>
+
+        <div class="design" id="phone">
+            <input type="phone" autocomplete="off" name="fphone" required placeholder="Enter your Mobile Number"><span class="error"></span>
+        </div>
+
+        <div class="design" id="pass">
+            <input type="password" autocomplete="off" name="pass" required placeholder="Enter Password"><span class="error"></span>
+        </div>
+
+        <div class="design" id="cpass">
+            <input type="password" autocomplete="off" name="cpass" required placeholder="Confirm Password"><span class="error"></span>
+        </div>
+
+        <input class="button" type="submit" value="Register">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
